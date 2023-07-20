@@ -344,6 +344,7 @@ span {
   bottom: 0;
   top: 0;
   margin: auto;
+  width: 200%;
 }
 .waveWrapperInner {
   position: absolute;
@@ -1842,36 +1843,30 @@ marquee>img{
 #navbar2{
   display: none;
 }
-.waveWrapper{
-  bottom: -80px;
-  width: 100%;
-}
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:400px) {
   body{
-    width: 165%;
+    width: 200%;
   }
- 
-    .waveWrapper{
-      bottom: -200px;
-      width: 170%;
-    }
-    
-}
-
-@media only screen and (min-width: 1000px) {
-
-.waveWrapper{
-    bottom: 0px;
-  }
-}
-@media only screen and (max-width: 900px) {
   .waveWrapper{
-    bottom: -100px;
+    bottom: -200px;
   }
+
+}
+@media only screen and (min-width:400px) {
   body{
-    width: 170%;
+    width: 200%;
   }
+  .waveWrapper{
+    bottom: -200px;
+  }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  
     #navbar{
       display: none;
     }
@@ -2035,4 +2030,15 @@ marquee>img{
   margin-top: 33px;
 }
     
+}
+
+@media only screen and (min-width:1000px) {
+
+  .waveWrapper{
+    bottom: 0px;
+    width: 100%;
+  }
+  body{
+    width: 100%;
+  }
 }
