@@ -13,12 +13,7 @@ body {
   height: max-content;
   overflow-x: hidden;
 }
-.body-main-intro-image>img{
 
-  height: 300px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 .navbar-main {
   display: flex;
   flex-direction: row;
@@ -301,7 +296,6 @@ span {
     opacity: 1;
   }
 }
-
 .body-main-intro-image>img{
   animation-name: comein4;
   animation-duration: 2s;
@@ -344,14 +338,13 @@ span {
   bottom: 0;
   top: 0;
   margin: auto;
-  width: 200%;
 }
 .waveWrapperInner {
   position: absolute;
   width: 100%;
   overflow: hidden;
   height: 100%;
-  bottom: -12px;
+  bottom: -1px;
 }
 .bgTop {
   z-index: 15;
@@ -1844,29 +1837,7 @@ marquee>img{
   display: none;
 }
 
-@media only screen and (max-width:400px) {
-  body{
-    width: 200%;
-  }
-  .waveWrapper{
-    bottom: -200px;
-  }
-
-}
-@media only screen and (min-width:400px) {
-  body{
-    width: 200%;
-  }
-  .waveWrapper{
-    bottom: -200px;
-  }
-
-}
-
-
 @media only screen and (max-width: 900px) {
-
-  
     #navbar{
       display: none;
     }
@@ -1930,8 +1901,7 @@ marquee>img{
       margin-top: -50px;
     }
     .body-main-intro-image>img{
-
-      height: 200px;
+      height: 300px;
       margin-top: 30px;
       margin-bottom: 30px;
     }
@@ -1941,7 +1911,6 @@ marquee>img{
       text-align: center;
 
     }
-
     .body-about-disc{
       margin-top:100px;
       display: flex;
@@ -1955,12 +1924,19 @@ marquee>img{
       align-items: center;
       margin: 33px;
     }
-    
+    .body-about{
+      border: 1px solid blue;
+      
+    }
+    #about{
+      margin: -150px;
+    }
+   
     .body-about-disc{
-      width:80%;
+      width:60%;
     }
     .body-about-info-second{
-      width: 80%;
+      width: 60%;
     }
     .body-influencers{
       display: flex;
@@ -2031,14 +2007,173 @@ marquee>img{
 }
     
 }
+@media only screen and (max-width: 320px) {
+    #navbar{
+      display: none;
+    }
+    #navbar2{
+      display:block;
+      background: linear-gradient(to right, #000424, #00052a, #010636);
 
-@media only screen and (min-width:1000px) {
+      padding: 20px;
+      align-items: center;
+      font-size: 8px;
+    }
+    
+    .navbar2-main {
+      display: flex;
+      flex-direction: row;
+      overflow: visible;
+      justify-content: space-evenly;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      z-index: 9999;
+    }
+    
+    .navbar2-main-logo > img {
+      height: 20px;
+      width:20px;
+    }
+    .navbar2-main-logo {
+      margin-right: 4rem;
+    }
+    .navbar2-main-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .navbar2-main-list-item {
+      text-decoration: none;
+      margin-left:10px;
+    }
+    .navbar2-main-list-item > a {
+      text-decoration: none;
+      font-family:"Nunito", "Helvetica", "Arial", "sans-serif";
+    
+      color: rgba(243, 232, 217, 0.763);
+      font-size: 8px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+    .navbar2-main-list-item > a:hover {
+      color: rgba(243, 232, 217, 0.86);
+      
+    }
+    .navbar2-main-list-item {
+      list-style: none;
+    }
+    .body-main-info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: -50px;
+    }
+    .body-main-intro-image>img{
+      height: 60px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .body-main-introduction{
+      align-items: center;
+      justify-content: center;
+      text-align: center;
 
-  .waveWrapper{
-    bottom: 0px;
-    width: 100%;
-  }
-  body{
-    width: 100%;
-  }
+    }
+    .body-about-disc{
+      margin-top:100px;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin-bottom: 100px;
+    }
+    .body-about-info-first,.body-about-info-second{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+    .body-about{
+      border: 1px solid blue;
+      
+    }
+    #about{
+      margin: -150px;
+    }
+   
+    .body-about-disc{
+      width:60%;
+    }
+    .body-about-info-second{
+      width: 60%;
+    }
+    .body-influencers{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .influencers{
+      align-items:center;
+      justify-content: center;
+      text-align: center;
+    }
+    .influencer-heading{
+      margin:30px 0 30px 0;
+    }
+    .blogs-info{
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+    }
+    .blogs-discription{
+      display: flex;
+      flex-direction: column;
+      width:20%;
+      text-align: center;
+    }
+    .blog-info-button{
+      align-items: center;
+      margin: 20px 0 20px 0;
+    }
+    .myblogs-card{
+      width: 50%;
+      margin:10px 0 10px 0;
+      overflow: scroll;
+    }
+    .myblogs-card::-webkit-scrollbar{
+      display: none;
+    }
+    #footer{
+      height: 80vh;
+    }
+    .footer-main{
+      margin: auto;
+      text-align: center;
+    }
+    .footer-main-one{
+      display: flex;
+      padding: 30px;
+      flex-direction: column;
+      margin: 20px;
+    }
+    .footer-main-two{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+.footer-info-main-two{
+  margin-bottom: 33px;
+  padding: 10px;
+  width: 80%;
+}
+.info2{
+  margin-top: 33px;
+}
+.contact{
+  margin-top: 33px;
+}
+    
 }
